@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
+	<title>CAPS4Kids</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+
 </head>
 <body>
 
@@ -225,15 +225,28 @@
 		<p>Sunday: TBD</p>
 	</div>
 	
-	<div class="contact-form">
-		<form id="contact-form" method="post" action="contact-form-handler.php">
-		<input name="name" type="text" class="form-control" placeholder="Your Name" required>
-		<br>
-		<input name="email" type="email" class="form-control" placeholder="Your Email" required></br>
-			<textarea name="message" class="form-control" placeholder="Message" row="4"
-			required></textarea><br>
-			
-			<input type="submit" class="form-control submit" value="SEND MESSAGE">
+	<div class="container">
+  		<form action="action_page.php">
+
+    			<label for="name">Name</label>
+    			<input type="text" id="name" name="name" placeholder="Enter name">
+
+    			<label for="email">Email</label>
+    			<input type="email" id="email" name="email" placeholder="Enter email">
+
+    			<label for="class">Class Select</label>
+    			<select id="class" name="class">
+      				<option value="chess">Chess</option>
+      				<option value="javaandpython">JavaAndPython</option>
+      				<option value="caps4kidscombo">CAPS4KidsCombo</option>
+    			</select>
+
+    			<label for="message">Enter Message</label>
+    			<textarea id="message" name="message" placeholder="Enter a message" style="height:200px"></textarea>
+
+    			<input type="submit" value="Submit">
+
+  		</form>
 	</div>
 
 	<div class="col-12">
