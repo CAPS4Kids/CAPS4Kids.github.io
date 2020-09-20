@@ -8,6 +8,19 @@ html, body {
 	color: #222;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #428bca;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .carousel-inner img {
 	height: 100%;
 	width: 100%;
@@ -17,15 +30,6 @@ html, body {
     top: 0;
     bottom: auto;
     color: #00FFF7
-}
-
-.carousel-inner > .item {
-    position: relative;
-    display: none;
-    -webkit-transition: 0.5s ease-in-out left;
-    -moz-transition: 0.5s ease-in-out left;
-    -o-transition: 0.5s ease-in-out left;
-    transition: 0.5s ease-in-out left;
 }
 
 footer {
@@ -41,17 +45,75 @@ hr.light {
 
 hr.my-4 {
 	border-top: 1px solid #d5d5d5;
+}			
+
+.form {
+	width = 100%;
 }
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
+.carousel-control-prev {
+	height: 26%;
+	top: 33%;
+	width: 15px;
 }
-@media (max-width: 576px) {
-  
+
+.carousel-control-next{
+	height: 26%;
+	top: 33%;
+	width: 15px;
+}
+
+.carousel-control-next-icon:
+{
+  left = 0;
+  color: #800000;
+}
+
+.carousel-control-prev-icon: {
+  font-size: 55px;
+  color: #800000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: -10px;
+}
+
+.carousel-indicators .active{
+    background-color: red;
+}
+
+.carousel {
+    background-color: #a9a9a9;
+}
+
+.form-form
+{
+    width:200px;
+    font-size:14pt;
 }
 
 
@@ -63,6 +125,7 @@ hr.my-4 {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
